@@ -16,7 +16,7 @@ def ping():
 def about():
     return "<p>Im learning MLops!</p>"
 
-model_pickle = open("/Users/manideep/Documents/GitHub/MLOps/Flask/classifier.pkl", "rb")
+model_pickle = open("classifier.pkl", "rb")
 clf = pickle.load(model_pickle)
 
 # defining the endpoint which will make the prediction
